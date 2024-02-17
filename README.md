@@ -26,7 +26,7 @@ public partial class Bootstrap : Node3D
 		if (playerData == null)
 		{
 			GD.Print("Save Data not found, creating new save");
-			playerData = new PlayerData(0);
+			playerData = new PlayerData();
 			_saveManager.SaveData(playerData);
 		}
 		else
